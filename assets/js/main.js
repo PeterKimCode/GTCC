@@ -23,14 +23,11 @@ const NAV = [
     ],
   },
   {
-    label: "Basic Education",
+    label: "Academics",
     path: "/basic-education/",
     children: [
-      { label: "Principal’s Message", path: "/basic-education/principals-message/" },
-      { label: "Preschool", path: "/basic-education/preschool/" },
-      { label: "Elementary", path: "/basic-education/elementary/" },
-      { label: "Middle/Junior", path: "/basic-education/middle-junior/" },
-      { label: "High/Senior", path: "/basic-education/high-senior/" },
+      { label: "College", path: "/basic-education/college/" },
+      { label: "Graduate School", path: "/basic-education/graduate-school/" },
     ],
   },
   {
@@ -391,7 +388,7 @@ function initFooterYear() {
     const items = [
       { label: "About GTCC", path: "/youngji_about-us/" },
       { label: "Admissions", path: "/admission/" },
-      { label: "Academic Programs", path: "/basic-education/" },
+      { label: "Academics", path: "/basic-education/" },
       { label: "e-Education", path: "/e-education/" },
       { label: "Community", path: "/community/" },
     ];
@@ -712,9 +709,10 @@ async function initPage() {
     logoLink.href = toRelative(base, "/");
   }
 
-  const logoImage = logoLink ? logoLink.querySelector("img") : null;
+  const logoImage = document.getElementById("header-logo-img");
   if (logoImage) {
     logoImage.src = toRelative(base, "/images/gtcc_logo.png");
+    logoImage.removeAttribute("data-src");
   }
 
   const headerShortcut = document.getElementById("header-cta-shortcut");
