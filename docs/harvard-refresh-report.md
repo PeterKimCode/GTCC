@@ -29,7 +29,7 @@
 - Skip link exposed on focus, keyboard-visible rings applied across interactive elements, and drawer prevents background scroll when open.
 - Color contrast validated for crimson-on-white and charcoal-on-parchment pairings exceeding AA requirements.
 - Breadcrumbs use semantic `<nav>` + `<ol>`, while single `<h1>` per page leads the document outline.
-- Meta descriptions harmonised with an informative tone (“Youngji International School in Seoul…”) to boost search relevance and snippet consistency.
+- Meta descriptions harmonised with an informative tone (“General Trias College of Cavite in Seoul…”) to boost search relevance and snippet consistency.
 - Links rewritten with meaningful anchor text (“Read update →”, “View notices →”) and contact addresses converted to accessible anchors.
 
 ## 2. Application checklist (per page)
@@ -87,7 +87,7 @@
 - `new-page-1/index.html` — Styled extension coordinator page under refreshed system.
 - `new-page-2/index.html` — Applied same improvements for extension teacher page.
 
-### About Youngji
+### About GTCC
 - `youngji_about-us/index.html` — Crafted Harvard hero, spacing, and sidebar for section landing.
 - `youngji_about-us/vision-and-mission/index.html` — Updated mission/vision narrative with serif hierarchy.
 - `youngji_about-us/principals-message/index.html` — Refined founder message layout and typography.

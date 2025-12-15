@@ -38,7 +38,7 @@ const NAV = [
     path: "/e-education/",
     children: [
       { label: "Director’s message", path: "/e-education/online-school/" },
-      { label: "Extension YJIS", path: "/e-education/online-school-k-12/" },
+      { label: "Extension GTCC", path: "/e-education/online-school-k-12/" },
       { label: "Accreditation", path: "/e-education/online-college/" },
       { label: "Online Examination", path: "/e-education/online-examination/" },
       { label: "Extension Class Coordinator", path: "/new-page-1/" },
@@ -52,7 +52,7 @@ const NAV = [
       { label: "SCHOOL LIFE", path: "/community/news-2/" },
       { label: "News / Notification", path: "/community/notification/" },
       { label: "Contact Info", path: "/community/campus-life/" },
-      { label: "Branch school of YJIS", path: "/community/extension-class-center/" },
+      { label: "Branch school of GTCC", path: "/community/extension-class-center/" },
       { label: "Contact Info & Search for student", path: "/community/search-for-student/" },
     ],
   },
@@ -389,7 +389,7 @@ function initFooterYear() {
   if (quickLinks) {
     quickLinks.innerHTML = "";
     const items = [
-      { label: "About Youngji", path: "/youngji_about-us/" },
+      { label: "About GTCC", path: "/youngji_about-us/" },
       { label: "Admissions", path: "/admission/" },
       { label: "Academic Programs", path: "/basic-education/" },
       { label: "e-Education", path: "/e-education/" },
@@ -465,7 +465,7 @@ function buildGlobalCta(base) {
       <div class="mx-auto flex max-w-4xl flex-col items-start gap-6 text-left md:flex-row md:items-center md:justify-between">
         <div class="space-y-2">
           <p class="text-xs font-semibold uppercase tracking-[0.3em] text-white/80">Take the next step</p>
-          <h2 class="text-3xl font-semibold tracking-tight text-white md:text-4xl">Begin your Youngji journey today</h2>
+          <h2 class="text-3xl font-semibold tracking-tight text-white md:text-4xl">Begin your GTCC journey today</h2>
           <p class="max-w-xl text-base text-white/90">Connect with our admissions counselors to explore scholarships, application timelines, and personalized campus visits for your family.</p>
         </div>
         <div class="flex flex-col items-stretch gap-3 sm:flex-row">
