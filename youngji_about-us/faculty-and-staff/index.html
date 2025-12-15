@@ -1,24 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Faculty and Staff | GTCC</title>
-  <meta name="description" content="Faculty and Staff at General Trias College of Cavite in Seoul. Meet the passionate educators and support staff guiding our learners every day." />
+  <meta name="description"
+    content="Faculty and Staff at General Trias College of Cavite in Seoul. Meet the passionate educators and support staff guiding our learners every day." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+Pro:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+Pro:wght@400;600;700&display=swap"
+    rel="stylesheet" />
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body data-depth="2" data-current-path="/youngji_about-us/faculty-and-staff/" class="bg-[#F8F7F3] font-['Inter',_sans-serif] text-[#1F2933] antialiased">
-  <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:rounded-full focus:bg-white focus:px-4 focus:py-2 focus:text-[#1A1F2B]">Skip to main content</a>
+
+<body data-depth="2" data-current-path="/youngji_about-us/faculty-and-staff/"
+  class="bg-[#F8F7F3] font-['Inter',_sans-serif] text-[#1F2933] antialiased">
+  <a href="#main-content"
+    class="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:rounded-full focus:bg-white focus:px-4 focus:py-2 focus:text-[#1A1F2B]">Skip
+    to main content</a>
   <div id="site-header"></div>
   <main id="main-content" class="mx-auto max-w-6xl px-4 py-12">
     <nav id="breadcrumbs" class="mb-8" aria-label="Breadcrumb"></nav>
     <section class="rounded-3xl border border-[#A51C30]/15 bg-white px-8 py-12 shadow-sm">
       <p class="text-xs font-semibold uppercase tracking-[0.3em] text-[#A51C30]">About GTCC</p>
-      <h1 class="mt-3 font-['Source_Serif_Pro',_serif] text-4xl font-semibold tracking-tight text-[#1A1F2B] sm:text-5xl">Faculty and Staff</h1>
-      <p class="mt-4 max-w-2xl text-lg leading-relaxed text-slate-600">Meet the passionate educators and support staff guiding our learners every day.</p>
+      <h1
+        class="mt-3 font-['Source_Serif_Pro',_serif] text-4xl font-semibold tracking-tight text-[#1A1F2B] sm:text-5xl">
+        Faculty and Staff</h1>
+      <p class="mt-4 max-w-2xl text-lg leading-relaxed text-slate-600">Meet the passionate educators and support staff
+        guiding our learners every day.</p>
     </section>
     <div class="mt-10 grid gap-10 lg:grid-cols-[280px,1fr]">
       <aside id="sidebar" class="hidden lg:block lg:sticky lg:top-32">
@@ -32,26 +43,59 @@
       <section class="space-y-10">
         <article class="rounded-3xl border border-slate-200/60 bg-white p-8 shadow-sm">
           <div class="space-y-6 text-base leading-relaxed text-slate-700">
-<p>Our faculty bring international experience and deep content knowledge to every lesson. They design inclusive classrooms that spark curiosity and encourage students to take ownership of their learning.</p>
-          <h2 class="font-[\'Source_Serif_Pro\',_serif] text-2xl font-semibold text-[#1A1F2B]">Leadership Team</h2>
-          <ul class="list-disc space-y-2 pl-6 text-slate-700">
-            <li><strong>Principal:</strong> Jonalyn Kim </li>
-            <li><strong>Vice Principal:</strong> Rhodelyn M. Comedia </li>
-            <li><strong>NKP Class Teacher:</strong> Georgie Mae S. Seagan </li>
-            <li><strong>Gr1 Class Teacher:</strong> Kim Raphaelle Fombuena </li>
-            <li><strong>Gr2 Class Teacher:</strong> Zhyra Marie M. Penus</li>
-            <li><strong>Gr3 Class Teacher:</strong> Katria C. Gregorio</li>
-            <li><strong>Gr4 Class Teacher:</strong> Nathalie V. Arguson</li>
-            <li><strong>Gr5 Class Teacher:</strong> Cyah Angela D. Somblingo</li>
-            <li><strong>Gr6 Class Teacher:</strong> Angelu Marie R. Baqui </li>
-            <li><strong>Gr7 Class Teacher:</strong> Andrew M. Cantero</li>
-            <li><strong>Gr8 Class Teacher:</strong> Baby Millen P. Aliño</li>
-            <li><strong>Gr9 Class Teacher:</strong> Mazelyne Reyes</li>
-            <li><strong>Gr10 Class Teacher:</strong> Johnmont Allane T. Lopez</li>
-            <li><strong>Gr11 Class Teacher:</strong> Shiela Bentulan </li>
-            <li><strong>Gr12 Class Teacher:</strong> Joseph R. Cabanig</li>
+            <p>Our faculty bring international experience and deep content knowledge to every lesson. They design
+              inclusive classrooms that spark curiosity and encourage students to take ownership of their learning.</p>
+            <h2 class="font-[\'Source_Serif_Pro\',_serif] text-2xl font-semibold text-[#1A1F2B]">Leadership Team</h2>
+            <ul class="list-disc space-y-2 pl-6 text-slate-700">
+              <li><strong>Principal:</strong> <button onclick="openFacultyModal('Jonalyn Kim')"
+                  class="text-[#A51C30] hover:underline font-semibold ml-1 text-left transition-colors">Jonalyn
+                  Kim</button></li>
+              <li><strong>Vice Principal:</strong> <button onclick="openFacultyModal('Rhodelyn M. Comedia')"
+                  class="text-[#A51C30] hover:underline font-semibold ml-1 text-left transition-colors">Rhodelyn M.
+                  Comedia</button></li>
+              <li><strong>NKP Class Teacher:</strong> <button onclick="openFacultyModal('Georgie Mae S. Seagan')"
+                  class="text-[#A51C30] hover:underline font-semibold ml-1 text-left transition-colors">Georgie Mae S.
+                  Seagan</button></li>
+              <li><strong>Gr1 Class Teacher:</strong> <button onclick="openFacultyModal('Kim Raphaelle Fombuena')"
+                  class="text-[#A51C30] hover:underline font-semibold ml-1 text-left transition-colors">Kim Raphaelle
+                  Fombuena</button></li>
+              <li><strong>Gr2 Class Teacher:</strong> <button onclick="openFacultyModal('Zhyra Marie M. Penus')"
+                  class="text-[#A51C30] hover:underline font-semibold ml-1 text-left transition-colors">Zhyra Marie M.
+                  Penus</button></li>
+              <li><strong>Gr3 Class Teacher:</strong> <button onclick="openFacultyModal('Katria C. Gregorio')"
+                  class="text-[#A51C30] hover:underline font-semibold ml-1 text-left transition-colors">Katria C.
+                  Gregorio</button></li>
+              <li><strong>Gr4 Class Teacher:</strong> <button onclick="openFacultyModal('Nathalie V. Arguson')"
+                  class="text-[#A51C30] hover:underline font-semibold ml-1 text-left transition-colors">Nathalie V.
+                  Arguson</button></li>
+              <li><strong>Gr5 Class Teacher:</strong> <button onclick="openFacultyModal('Cyah Angela D. Somblingo')"
+                  class="text-[#A51C30] hover:underline font-semibold ml-1 text-left transition-colors">Cyah Angela D.
+                  Somblingo</button></li>
+              <li><strong>Gr6 Class Teacher:</strong> <button onclick="openFacultyModal('Angelu Marie R. Baqui')"
+                  class="text-[#A51C30] hover:underline font-semibold ml-1 text-left transition-colors">Angelu Marie R.
+                  Baqui</button></li>
+              <li><strong>Gr7 Class Teacher:</strong> <button onclick="openFacultyModal('Andrew M. Cantero')"
+                  class="text-[#A51C30] hover:underline font-semibold ml-1 text-left transition-colors">Andrew M.
+                  Cantero</button></li>
+              <li><strong>Gr8 Class Teacher:</strong> <button onclick="openFacultyModal('Baby Millen P. Aliño')"
+                  class="text-[#A51C30] hover:underline font-semibold ml-1 text-left transition-colors">Baby Millen P.
+                  Aliño</button></li>
+              <li><strong>Gr9 Class Teacher:</strong> <button onclick="openFacultyModal('Mazelyne Reyes')"
+                  class="text-[#A51C30] hover:underline font-semibold ml-1 text-left transition-colors">Mazelyne
+                  Reyes</button></li>
+              <li><strong>Gr10 Class Teacher:</strong> <button onclick="openFacultyModal('Johnmont Allane T. Lopez')"
+                  class="text-[#A51C30] hover:underline font-semibold ml-1 text-left transition-colors">Johnmont Allane
+                  T. Lopez</button></li>
+              <li><strong>Gr11 Class Teacher:</strong> <button onclick="openFacultyModal('Shiela Bentulan')"
+                  class="text-[#A51C30] hover:underline font-semibold ml-1 text-left transition-colors">Shiela
+                  Bentulan</button></li>
+              <li><strong>Gr12 Class Teacher:</strong> <button onclick="openFacultyModal('Joseph R. Cabanig')"
+                  class="text-[#A51C30] hover:underline font-semibold ml-1 text-left transition-colors">Joseph R.
+                  Cabanig</button></li>
+
             </ul>
-          <p>Support staff in counseling, technology, library services, and campus operations ensure that every learner feels safe, supported, and encouraged.</p>
+            <p>Support staff in counseling, technology, library services, and campus operations ensure that every
+              learner feels safe, supported, and encouraged.</p>
           </div>
         </article>
         <aside id="sidebar-mobile" class="mt-8 hidden border-t border-slate-200/80 pt-8 lg:hidden">
@@ -66,5 +110,171 @@
   </main>
   <div id="site-footer"></div>
   <script src="../../assets/js/main.js" defer></script>
+
+  <!-- Faculty Modal -->
+  <div id="faculty-modal"
+    class="fixed inset-0 z-[100] flex items-center justify-center bg-black/60 p-4 opacity-0 pointer-events-none transition-opacity duration-300"
+    aria-hidden="true">
+    <div
+      class="relative w-full max-w-4xl transform scale-95 rounded-2xl bg-white p-8 shadow-2xl transition-transform duration-300 overflow-hidden"
+      id="faculty-modal-content">
+      <button onclick="closeFacultyModal()"
+        class="absolute right-4 top-4 rounded-full bg-slate-100 p-2 text-slate-500 hover:bg-slate-200 hover:text-slate-800 focus:outline-none focus:ring-2 focus:ring-[#A51C30]"
+        aria-label="Close modal">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+
+      <div class="grid gap-8 md:grid-cols-[300px,1fr]">
+        <!-- Image Section -->
+        <div class="flex flex-col items-center">
+          <div class="relative h-[300px] w-full overflow-hidden rounded-xl bg-slate-200 shadow-lg">
+            <img id="modal-image" src="" alt="" class="h-full w-full object-cover" />
+          </div>
+        </div>
+
+        <!-- Info Section -->
+        <div class="overflow-y-auto max-h-[60vh] pr-2">
+          <h3 id="modal-name" class="font-['Source_Serif_Pro',_serif] text-3xl font-bold text-[#1A1F2B]"></h3>
+          <p id="modal-role" class="mt-1 text-lg font-medium text-[#A51C30]"></p>
+
+          <div class="mt-6 border-t border-slate-100 pt-4">
+            <h4 class="text-sm font-bold uppercase tracking-wider text-slate-500">Biography / Resume</h4>
+            <div id="modal-bio" class="mt-3 space-y-3 text-slate-600 leading-relaxed whitespace-pre-line">
+              <!-- Bio content will be injected here -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const facultyData = {
+      'Jonalyn Kim': {
+        role: 'Principal',
+        image: 'https://placehold.co/400x500?text=Jonalyn+Kim',
+        bio: "Jonalyn Kim leads GTCC with a vision for academic excellence and character development. With over 15 years in educational leadership, she focuses on creating a supportive and rigorous learning environment."
+      },
+      'Rhodelyn M. Comedia': {
+        role: 'Vice Principal',
+        image: 'https://placehold.co/400x500?text=Rhodelyn+M.+Comedia',
+        bio: "As Vice Principal, Rhodelyn M. Comedia ensures the smooth daily operations of the school and oversees curriculum implementation to meet international standards."
+      },
+      'Georgie Mae S. Seagan': {
+        role: 'NKP Class Teacher',
+        image: 'https://placehold.co/400x500?text=Georgie+Mae',
+        bio: "Georgie Mae S. Seagan specializes in early childhood education, fostering a love for learning in our youngest students through play-based and inquiry-based activities."
+      },
+      'Kim Raphaelle Fombuena': {
+        role: 'Gr1 Class Teacher',
+        image: 'https://placehold.co/400x500?text=Kim+Raphaelle',
+        bio: "Kim Raphaelle Fombuena guides Grade 1 students through their foundational years, emphasizing literacy and numeracy skills in a caring classroom setting."
+      },
+      'Zhyra Marie M. Penus': {
+        role: 'Gr2 Class Teacher',
+        image: 'https://placehold.co/400x500?text=Zhyra+Marie',
+        bio: "Zhyra Marie M. Penus encourages curiosity and collaboration in Grade 2, helping students build confidence in their academic and social abilities."
+      },
+      'Katria C. Gregorio': {
+        role: 'Gr3 Class Teacher',
+        image: 'https://placehold.co/400x500?text=Katria+C.+Gregorio',
+        bio: "Katria C. Gregorio creates an engaging learning environment for Grade 3 students, focusing on developing critical thinking and communication skills."
+      },
+      'Nathalie V. Arguson': {
+        role: 'Gr4 Class Teacher',
+        image: 'https://placehold.co/400x500?text=Nathalie+V.+Arguson',
+        bio: "Nathalie V. Arguson supports Grade 4 students as they transition to more independent learning, providing mentorship and academic challenge."
+      },
+      'Cyah Angela D. Somblingo': {
+        role: 'Gr5 Class Teacher',
+        image: 'https://placehold.co/400x500?text=Cyah+Angela',
+        bio: "Cyah Angela D. Somblingo inspires Grade 5 students to explore new subjects and interests, preparing them for the upper primary years."
+      },
+      'Angelu Marie R. Baqui': {
+        role: 'Gr6 Class Teacher',
+        image: 'https://placehold.co/400x500?text=Angelu+Marie',
+        bio: "Angelu Marie R. Baqui leads the Grade 6 cohort, focusing on leadership development and preparing students for their transition to secondary education."
+      },
+      'Andrew M. Cantero': {
+        role: 'Gr7 Class Teacher',
+        image: 'https://placehold.co/400x500?text=Andrew+M.+Cantero',
+        bio: "Andrew M. Cantero mentors Grade 7 students, helping them navigate the new challenges of secondary school with a focus on personal growth."
+      },
+      'Baby Millen P. Aliño': {
+        role: 'Gr8 Class Teacher',
+        image: 'https://placehold.co/400x500?text=Baby+Millen',
+        bio: "Baby Millen P. Aliño challenges Grade 8 students to think critically and creatively, fostering a deep understanding of core subjects."
+      },
+      'Mazelyne Reyes': {
+        role: 'Gr9 Class Teacher',
+        image: 'https://placehold.co/400x500?text=Mazelyne+Reyes',
+        bio: "Mazelyne Reyes prepares Grade 9 students for their senior years, guiding them in academic choices and personal development."
+      },
+      'Johnmont Allane T. Lopez': {
+        role: 'Gr10 Class Teacher',
+        image: 'https://placehold.co/400x500?text=Johnmont+Allane',
+        bio: "Johnmont Allane T. Lopez oversees Grade 10, ensuring students are ready for the rigors of senior high school and future career paths."
+      },
+      'Shiela Bentulan': {
+        role: 'Gr11 Class Teacher',
+        image: 'https://placehold.co/400x500?text=Shiela+Bentulan',
+        bio: "Shiela Bentulan guides Grade 11 students through their specialized tracks, providing college and career counseling alongside academic instruction."
+      },
+      'Joseph R. Cabanig': {
+        role: 'Gr12 Class Teacher',
+        image: 'https://placehold.co/400x500?text=Joseph+R.+Cabanig',
+        bio: "Joseph R. Cabanig mentors the graduating class, supporting them in their final year projects and university applications."
+      }
+    };
+
+    function openFacultyModal(name) {
+      const data = facultyData[name];
+      if (!data) return;
+
+      document.getElementById('modal-name').textContent = name;
+      document.getElementById('modal-role').textContent = data.role;
+      document.getElementById('modal-image').src = data.image;
+      document.getElementById('modal-image').alt = name;
+      document.getElementById('modal-bio').textContent = data.bio;
+
+      const modal = document.getElementById('faculty-modal');
+      const content = document.getElementById('faculty-modal-content');
+
+      modal.classList.remove('opacity-0', 'pointer-events-none');
+      content.classList.remove('scale-95');
+      content.classList.add('scale-100');
+
+      document.body.style.overflow = 'hidden'; // Prevent background scrolling
+    }
+
+    function closeFacultyModal() {
+      const modal = document.getElementById('faculty-modal');
+      const content = document.getElementById('faculty-modal-content');
+
+      modal.classList.add('opacity-0', 'pointer-events-none');
+      content.classList.remove('scale-100');
+      content.classList.add('scale-95');
+
+      document.body.style.overflow = '';
+    }
+
+    // Close on click outside
+    document.getElementById('faculty-modal').addEventListener('click', function (e) {
+      if (e.target === this) {
+        closeFacultyModal();
+      }
+    });
+
+    // Close on Escape key
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') {
+        closeFacultyModal();
+      }
+    });
+  </script>
+
 </body>
+
 </html>
