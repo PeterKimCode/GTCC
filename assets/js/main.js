@@ -692,6 +692,10 @@ async function initPage() {
         const headerContainer = document.getElementById("site-header");
         if (headerContainer) {
           headerContainer.innerHTML = html;
+          const mobileMenu = document.getElementById("mobile-menu-overlay");
+          if (mobileMenu) {
+            document.body.appendChild(mobileMenu);
+          }
         }
       }),
     fetch(footerPath)
