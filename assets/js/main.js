@@ -34,12 +34,12 @@ const NAV = [
     label: "Lifelong Education",
     path: "/Lifelong Education/",
     children: [
-      { label: "Director’s message", path: "/e-education/online-school/" },
-      { label: "Lifelong Education Program", path: "/e-education/online-school-k-12/" },
-      { label: "High-Level Program", path: "/e-education/online-college/" },
+      { label: "Director’s message", path: "/Director’s message" },
+      { label: "Lifelong Education Program", path: "Lifelong Education Program" },
+      { label: "High-Level Program", path: "/High-Level Program" },
       { label: "Non-degree Program", path: "/e-education/online-examination/" },
-      { label: "Credit Bank System Program", path: "/new-page-1/" },
-      { label: "International Civil Qualification Program", path: "/new-page-2/" },
+      { label: "Credit Bank System Program", path: "Non-degree Program" },
+      { label: "International Civil Qualification Program", path: "International Civil Qualification Program" },
     ],
   },
   {
