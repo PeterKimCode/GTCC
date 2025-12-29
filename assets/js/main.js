@@ -31,7 +31,7 @@ const NAV = [
     ],
   },
   {
-    label: "Lifelong Education",
+    label: "Lifelong Edu",
     path: "/e-education/",
     children: [
       { label: "Director’s message", path: "/e-education/online-school/" },
