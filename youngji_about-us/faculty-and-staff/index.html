@@ -46,54 +46,37 @@
             <p>Our faculty bring international experience and deep content knowledge to every lesson. They design
               inclusive classrooms that spark curiosity and encourage students to take ownership of their learning.</p>
             <h2 class="font-[\'Source_Serif_Pro\',_serif] text-2xl font-semibold text-[#1A1F2B]">Leadership Team</h2>
-            <ul class="list-disc space-y-2 pl-6 text-slate-700">
-              <li><strong>Principal:</strong> <button onclick="openFacultyModal('Jonalyn Kim')"
-                  class="text-[#A51C30] hover:underline font-semibold ml-1 text-left transition-colors">Jonalyn
-                  Kim</button></li>
-              <li><strong>Vice Principal:</strong> <button onclick="openFacultyModal('Rhodelyn M. Comedia')"
-                  class="text-[#A51C30] hover:underline font-semibold ml-1 text-left transition-colors">Rhodelyn M.
-                  Comedia</button></li>
-              <li><strong>NKP Class Teacher:</strong> <button onclick="openFacultyModal('Georgie Mae S. Seagan')"
-                  class="text-[#A51C30] hover:underline font-semibold ml-1 text-left transition-colors">Georgie Mae S.
-                  Seagan</button></li>
-              <li><strong>Gr1 Class Teacher:</strong> <button onclick="openFacultyModal('Kim Raphaelle Fombuena')"
-                  class="text-[#A51C30] hover:underline font-semibold ml-1 text-left transition-colors">Kim Raphaelle
-                  Fombuena</button></li>
-              <li><strong>Gr2 Class Teacher:</strong> <button onclick="openFacultyModal('Zhyra Marie M. Penus')"
-                  class="text-[#A51C30] hover:underline font-semibold ml-1 text-left transition-colors">Zhyra Marie M.
-                  Penus</button></li>
-              <li><strong>Gr3 Class Teacher:</strong> <button onclick="openFacultyModal('Katria C. Gregorio')"
-                  class="text-[#A51C30] hover:underline font-semibold ml-1 text-left transition-colors">Katria C.
-                  Gregorio</button></li>
-              <li><strong>Gr4 Class Teacher:</strong> <button onclick="openFacultyModal('Nathalie V. Arguson')"
-                  class="text-[#A51C30] hover:underline font-semibold ml-1 text-left transition-colors">Nathalie V.
-                  Arguson</button></li>
-              <li><strong>Gr5 Class Teacher:</strong> <button onclick="openFacultyModal('Cyah Angela D. Somblingo')"
-                  class="text-[#A51C30] hover:underline font-semibold ml-1 text-left transition-colors">Cyah Angela D.
-                  Somblingo</button></li>
-              <li><strong>Gr6 Class Teacher:</strong> <button onclick="openFacultyModal('Angelu Marie R. Baqui')"
-                  class="text-[#A51C30] hover:underline font-semibold ml-1 text-left transition-colors">Angelu Marie R.
-                  Baqui</button></li>
-              <li><strong>Gr7 Class Teacher:</strong> <button onclick="openFacultyModal('Andrew M. Cantero')"
-                  class="text-[#A51C30] hover:underline font-semibold ml-1 text-left transition-colors">Andrew M.
-                  Cantero</button></li>
-              <li><strong>Gr8 Class Teacher:</strong> <button onclick="openFacultyModal('Baby Millen P. Aliño')"
-                  class="text-[#A51C30] hover:underline font-semibold ml-1 text-left transition-colors">Baby Millen P.
-                  Aliño</button></li>
-              <li><strong>Gr9 Class Teacher:</strong> <button onclick="openFacultyModal('Mazelyne Reyes')"
-                  class="text-[#A51C30] hover:underline font-semibold ml-1 text-left transition-colors">Mazelyne
-                  Reyes</button></li>
-              <li><strong>Gr10 Class Teacher:</strong> <button onclick="openFacultyModal('Johnmont Allane T. Lopez')"
-                  class="text-[#A51C30] hover:underline font-semibold ml-1 text-left transition-colors">Johnmont Allane
-                  T. Lopez</button></li>
-              <li><strong>Gr11 Class Teacher:</strong> <button onclick="openFacultyModal('Shiela Bentulan')"
-                  class="text-[#A51C30] hover:underline font-semibold ml-1 text-left transition-colors">Shiela
-                  Bentulan</button></li>
-              <li><strong>Gr12 Class Teacher:</strong> <button onclick="openFacultyModal('Joseph R. Cabanig')"
-                  class="text-[#A51C30] hover:underline font-semibold ml-1 text-left transition-colors">Joseph R.
-                  Cabanig</button></li>
-
-            </ul>
+            <div class="rounded-2xl border border-slate-200/70 bg-slate-50 p-4">
+              <label for="faculty-search" class="text-xs font-semibold uppercase tracking-[0.25em] text-slate-500">Search
+                faculty</label>
+              <div class="mt-3 flex flex-col gap-3 sm:flex-row sm:items-center">
+                <input id="faculty-search" type="search"
+                  placeholder="Search by name or role (e.g., Principal, Grade 4)"
+                  class="w-full rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm text-slate-700 shadow-sm focus:border-[#A51C30] focus:outline-none focus:ring-2 focus:ring-[#A51C30]/30" />
+                <button id="faculty-clear" type="button"
+                  class="inline-flex items-center justify-center rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm font-semibold text-slate-600 shadow-sm transition hover:border-slate-300 hover:text-slate-800 sm:w-auto">
+                  Clear
+                </button>
+              </div>
+            </div>
+            <div class="space-y-4">
+              <ul id="faculty-list" class="list-disc space-y-2 pl-6 text-slate-700"></ul>
+              <p id="faculty-empty" class="hidden text-sm font-semibold text-slate-500">No matching faculty members.
+                Try another search.</p>
+              <div class="flex flex-col gap-3 rounded-2xl border border-slate-200/70 bg-white px-4 py-4 shadow-sm sm:flex-row sm:items-center sm:justify-between">
+                <p id="faculty-pagination-status" class="text-sm text-slate-600"></p>
+                <div class="flex items-center gap-2">
+                  <button id="faculty-prev" type="button"
+                    class="rounded-full border border-slate-200 px-4 py-2 text-sm font-semibold text-slate-600 transition hover:border-slate-300 hover:text-slate-800 disabled:cursor-not-allowed disabled:opacity-50">
+                    Previous
+                  </button>
+                  <button id="faculty-next" type="button"
+                    class="rounded-full border border-slate-200 px-4 py-2 text-sm font-semibold text-slate-600 transition hover:border-slate-300 hover:text-slate-800 disabled:cursor-not-allowed disabled:opacity-50">
+                    Next
+                  </button>
+                </div>
+              </div>
+            </div>
             <p>Support staff in counseling, technology, library services, and campus operations ensure that every
               learner feels safe, supported, and encouraged.</p>
           </div>
@@ -228,6 +211,118 @@
         bio: "Joseph R. Cabanig mentors the graduating class, supporting them in their final year projects and university applications."
       }
     };
+
+    const facultyEntries = [
+      { name: 'Jonalyn Kim', role: 'Principal' },
+      { name: 'Rhodelyn M. Comedia', role: 'Vice Principal' },
+      { name: 'Georgie Mae S. Seagan', role: 'NKP Class Teacher' },
+      { name: 'Kim Raphaelle Fombuena', role: 'Gr1 Class Teacher' },
+      { name: 'Zhyra Marie M. Penus', role: 'Gr2 Class Teacher' },
+      { name: 'Katria C. Gregorio', role: 'Gr3 Class Teacher' },
+      { name: 'Nathalie V. Arguson', role: 'Gr4 Class Teacher' },
+      { name: 'Cyah Angela D. Somblingo', role: 'Gr5 Class Teacher' },
+      { name: 'Angelu Marie R. Baqui', role: 'Gr6 Class Teacher' },
+      { name: 'Andrew M. Cantero', role: 'Gr7 Class Teacher' },
+      { name: 'Baby Millen P. Aliño', role: 'Gr8 Class Teacher' },
+      { name: 'Mazelyne Reyes', role: 'Gr9 Class Teacher' },
+      { name: 'Johnmont Allane T. Lopez', role: 'Gr10 Class Teacher' },
+      { name: 'Shiela Bentulan', role: 'Gr11 Class Teacher' },
+      { name: 'Joseph R. Cabanig', role: 'Gr12 Class Teacher' }
+    ];
+
+    const facultyList = document.getElementById('faculty-list');
+    const facultySearch = document.getElementById('faculty-search');
+    const facultyClear = document.getElementById('faculty-clear');
+    const facultyEmpty = document.getElementById('faculty-empty');
+    const facultyPrev = document.getElementById('faculty-prev');
+    const facultyNext = document.getElementById('faculty-next');
+    const facultyStatus = document.getElementById('faculty-pagination-status');
+
+    const pageSize = 10;
+    let currentPage = 1;
+    let currentQuery = '';
+
+    function getFilteredFaculty() {
+      if (!currentQuery) {
+        return facultyEntries;
+      }
+      return facultyEntries.filter((entry) => {
+        const haystack = `${entry.role} ${entry.name}`.toLowerCase();
+        return haystack.includes(currentQuery);
+      });
+    }
+
+    function renderFacultyList() {
+      const filtered = getFilteredFaculty();
+      const totalPages = Math.max(1, Math.ceil(filtered.length / pageSize));
+
+      if (currentPage > totalPages) {
+        currentPage = totalPages;
+      }
+
+      const startIndex = (currentPage - 1) * pageSize;
+      const pageItems = filtered.slice(startIndex, startIndex + pageSize);
+
+      facultyList.innerHTML = '';
+      pageItems.forEach((entry) => {
+        const listItem = document.createElement('li');
+        const roleStrong = document.createElement('strong');
+        roleStrong.textContent = `${entry.role}:`;
+        const button = document.createElement('button');
+        button.textContent = entry.name;
+        button.className =
+          'text-[#A51C30] hover:underline font-semibold ml-1 text-left transition-colors';
+        button.type = 'button';
+        button.addEventListener('click', () => openFacultyModal(entry.name));
+
+        listItem.appendChild(roleStrong);
+        listItem.appendChild(button);
+        facultyList.appendChild(listItem);
+      });
+
+      const hasResults = filtered.length > 0;
+      facultyEmpty.classList.toggle('hidden', hasResults);
+      facultyPrev.disabled = currentPage === 1 || !hasResults;
+      facultyNext.disabled = currentPage === totalPages || !hasResults;
+
+      if (hasResults) {
+        facultyStatus.textContent = `Showing ${pageItems.length} of ${filtered.length} results · Page ${currentPage} of ${totalPages}`;
+      } else {
+        facultyStatus.textContent = 'Showing 0 of 0 results';
+      }
+    }
+
+    facultySearch.addEventListener('input', (event) => {
+      currentQuery = event.target.value.trim().toLowerCase();
+      currentPage = 1;
+      renderFacultyList();
+    });
+
+    facultyClear.addEventListener('click', () => {
+      facultySearch.value = '';
+      currentQuery = '';
+      currentPage = 1;
+      renderFacultyList();
+      facultySearch.focus();
+    });
+
+    facultyPrev.addEventListener('click', () => {
+      if (currentPage > 1) {
+        currentPage -= 1;
+        renderFacultyList();
+      }
+    });
+
+    facultyNext.addEventListener('click', () => {
+      const filtered = getFilteredFaculty();
+      const totalPages = Math.max(1, Math.ceil(filtered.length / pageSize));
+      if (currentPage < totalPages) {
+        currentPage += 1;
+        renderFacultyList();
+      }
+    });
+
+    renderFacultyList();
 
     function openFacultyModal(name) {
       const data = facultyData[name];
