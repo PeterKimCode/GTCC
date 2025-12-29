@@ -31,15 +31,15 @@ const NAV = [
     ],
   },
   {
-    label: "e-Education",
-    path: "/e-education/",
+    label: "Lifelong Education",
+    path: "/Lifelong Education/",
     children: [
       { label: "Director’s message", path: "/e-education/online-school/" },
-      { label: "Extension GTCC", path: "/e-education/online-school-k-12/" },
-      { label: "Accreditation", path: "/e-education/online-college/" },
-      { label: "Online Examination", path: "/e-education/online-examination/" },
-      { label: "Extension Class Coordinator", path: "/new-page-1/" },
-      { label: "Extension Class Teacher", path: "/new-page-2/" },
+      { label: "Lifelong Education Program", path: "/e-education/online-school-k-12/" },
+      { label: "High-Level Program", path: "/e-education/online-college/" },
+      { label: "Non-degree Program", path: "/e-education/online-examination/" },
+      { label: "Credit Bank System", path: "/new-page-1/" },
+      { label: "International Civil Qualification Program", path: "/new-page-2/" },
     ],
   },
   {
