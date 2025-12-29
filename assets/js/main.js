@@ -38,7 +38,7 @@ const NAV = [
       { label: "Lifelong Education Program", path: "/e-education/online-school-k-12/" },
       { label: "High-Level Program", path: "/e-education/online-college/" },
       { label: "Non-degree Program", path: "/e-education/online-examination/" },
-      { label: "Credit Bank System", path: "/new-page-1/" },
+      { label: "Credit Bank System Program", path: "/new-page-1/" },
       { label: "International Civil Qualification Program", path: "/new-page-2/" },
     ],
   },
