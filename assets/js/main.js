@@ -32,12 +32,12 @@ const NAV = [
   },
   {
     label: "Lifelong Education",
-    path: "/Lifelong Education/",
+    path: "/e-education/",
     children: [
       { label: "Director’s message", path: "/e-education/online-school/" },
-      { label: "Extension YJIS", path: "/e-education/online-school-k-12/" },
-      { label: "Accreditation", path: "/e-education/online-college/" },
-      { label: "Online Examination", path: "/e-education/online-examination/" },
+      { label: "Lifelong Education Programs", path: "/e-education/online-school-k-12/" },
+      { label: "Non-Degree Programs", path: "/e-education/online-college/" },
+      { label: "International Civil Qualification Programs", path: "/e-education/online-examination/" },
       { label: "Extension Class Coordinator", path: "/new-page-1/" },
       { label: "Extension Class Teacher", path: "/new-page-2/" },
     ],
