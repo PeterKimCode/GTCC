@@ -5,11 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Board of Sponsors | General Trias College of Cavite</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
 </head>
-<body data-depth="2" class="bg-[#F8F7F3] font-['Inter',_sans-serif] text-[#1F2933]">
+<body data-depth="2" class="bg-[#F8F7F3] font-['Inter',_sans-serif] text-[#1F2933] antialiased">
   <div id="site-header"></div>
+
   <main class="mx-auto max-w-6xl px-4 py-12">
-    <section class="rounded-3xl border border-[#A51C30]/15 bg-white px-8 py-12 shadow-sm">
+    <section class="rounded-3xl border border-[#A51C30]/15 bg-white px-8 py-12 shadow-sm mb-10">
       <p class="text-xs font-semibold uppercase tracking-[0.3em] text-[#A51C30]">About GTCC</p>
       <h1 class="mt-3 text-4xl font-semibold text-[#1A1F2B]">Board of Sponsors</h1>
       <p class="mt-4 max-w-2xl text-lg text-slate-600">
@@ -17,171 +21,47 @@
       </p>
     </section>
 
-    <div class="mt-10 grid gap-10 lg:grid-cols-[280px,1fr]">
-      <aside id="sidebar"></aside>
-      <article class="rounded-3xl border border-slate-200/60 bg-white p-8 shadow-sm">
-        <div class="prose max-w-none text-slate-700">
-          <h2 class="text-2xl font-bold mb-6">후원회 명단</h2>
-          <p>여기에 후원자 명단이나 내용을 입력하시면 됩니다.</p>
-        </div>
-      </article>
+    <div class="grid gap-10 lg:grid-cols-[280px,1fr]">
+      <aside id="sidebar" class="hidden lg:block lg:sticky lg:top-32"></aside>
+
+      <section class="space-y-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          
+          <article class="flex flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition-hover hover:shadow-md">
+            <div class="aspect-[4/5] w-full overflow-hidden bg-slate-100">
+              <img src="../../assets/images/남궁선 목사.png" alt="남궁선" class="h-full w-full object-cover">
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-[#1A1F2B]">남궁선</h3>
+              <p class="text-[#A51C30] font-medium text-sm mb-4">총장</p>
+              <ul class="space-y-2 text-sm text-slate-600 border-t border-slate-100 pt-4">
+                <li>• 조직신학 / 개혁주의 신학</li>
+                <li>• 총회신학학술연구원 학장</li>
+                <li>• 저서 : 삶의 여정 속에서</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="flex flex-col overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition-hover hover:shadow-md">
+            <div class="aspect-[4/5] w-full overflow-hidden bg-slate-100">
+              <img src="../../assets/images/김낙신총장님프로필사진.jpg" alt="김낙신" class="h-full w-full object-cover">
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-[#1A1F2B]">김낙신</h3>
+              <p class="text-[#A51C30] font-medium text-sm mb-4">교수</p>
+              <ul class="space-y-2 text-sm text-slate-600 border-t border-slate-100 pt-4">
+                <li>• 설교학 / 목회학 / 예배학</li>
+                <li>• 교회 현장 중심의 실천신학 교육</li>
+                <li>• 저서: 교단과 지역교회를 섬길 목회자 양성</li>
+              </ul>
+            </div>
+          </article>
+
+          </div>
+      </section>
     </div>
   </main>
 
-
-<main class="fade-in">
-        <div class="page-header">
-            <h2>교수 소개</h2>
-        </div>
-        <div class="container page-content-area shadow-sm">
-            <div class="faculty-grid">
-                <article class="faculty-card">
-                    <img src="assets/images/남궁선 목사.png" alt="우상용 교수" class="faculty-photo">
-                    <div class="faculty-body">
-                        <h3>남궁선</h3>
-                        <strong>총장</strong>
-                        <ul>
-                            <li>조직신학 / 개혁주의 신학</li>
-                            <li>총회신학학술연구원 학장</li>
-                            <li>교단 신학교육 및 목회자 양성 총괄</li>
-                            <li>저서 : 삶의 여정 속에서</li>
-                        </ul>
-                    </div>
-                </article>
-                <article class="faculty-card">
-                    <img src="assets/images/C.png" alt="목회학과 교수진" class="faculty-photo">
-                    <div class="faculty-body">
-                        <h3>채 윤</h3>
-                        <strong>학생처장</strong>
-                        <ul>
-                            <li>성경신학 / 조직신학 / 역사신학</li>
-                            <li>개혁주의 신학의 정통성과 학문 연구 지도</li>
-                            <li>원어, 주해, 교리 교육 중심 강의</li>
-                            <li>저서 :성경신학</li>
-                        </ul>
-                    </div>
-                </article>
-                <article class="faculty-card">
-                    <img src="assets/images/박영훈.jpg" alt="목회학과 교수진" class="faculty-photo">
-                    <div class="faculty-body">
-                        <h3>박영훈</h3>
-                        <strong>교무처장</strong>
-                        <ul>
-                            <li>설교학 / 목회학 / 예배학</li>
-                            <li>교회 현장 중심의 실천신학 교육</li>
-                            <li>목회 상담, 리더십, 현장실습 지도</li>
-                            <li>저서 :구약개론</li>
-                        </ul>
-                    </div>
-                     </article>
-                <article class="faculty-card">
-                    <img src="assets/images/김낙신총장님프로필사진.jpg" alt="목회학과 교수진" class="faculty-photo">
-                    <div class="faculty-body">
-                        <h3>김낙신</h3>
-                        <strong>교수</strong>
-                        <ul>
-                            <li>설교학 / 목회학 / 예배학</li>
-                            <li>교회 현장 중심의 실천신학 교육</li>
-                            <li>목회 상담, 리더십, 현장실습 지도</li>
-                            <li>저서: 교단과 지역교회를 섬길 목회자 양성</li>
-                        </ul>
-                    </div>
-                     </article>
-                <article class="faculty-card">
-                    <img src="assets/images/조나김.png" alt="목회학과 교수진" class="faculty-photo">
-                    <div class="faculty-body">
-                        <h3>JONALYN KIM</h3>
-                        <strong>교수</strong>
-                        <ul>
-                            <li>설교학 / 목회학 / 예배학</li>
-                            <li>교회 현장 중심의 실천신학 교육</li>
-                            <li>목회 상담, 리더십, 현장실습 지도</li>
-                            <li>교단과 지역교회를 섬길 목회자 양성</li>
-                        </ul>
-                    </div>
-                     </article>
-                <article class="faculty-card">
-                    <img src="assets/images/이광재박사.png" alt="목회학과 교수진" class="faculty-photo">
-                    <div class="faculty-body">
-                        <h3>이광재</h3>
-                        <strong>교수</strong>
-                        <ul>
-                            <li>설교학 / 목회학 / 예배학</li>
-                            <li>교회 현장 중심의 실천신학 교육</li>
-                            <li>목회 상담, 리더십, 현장실습 지도</li>
-                            <li>교단과 지역교회를 섬길 목회자 양성</li>
-                        </ul>
-                    </div>
-                     </article>
-                <article class="faculty-card">
-                    <img src="assets/images/우상용.jpg" alt="목회학과 교수진" class="faculty-photo">
-                    <div class="faculty-body">
-                        <h3>우상용</h3>
-                        <strong>교수</strong>
-                        <ul>
-                            <li>설교학 / 목회학 / 예배학</li>
-                            <li>교회 현장 중심의 실천신학 교육</li>
-                            <li>목회 상담, 리더십, 현장실습 지도</li>
-                            <li>교단과 지역교회를 섬길 목회자 양성</li>
-                        </ul>
-                    </div>
-                     </article>
-                <article class="faculty-card">
-                    <img src="assets/images/dean1.png" alt="목회학과 교수진" class="faculty-photo">
-                    <div class="faculty-body">
-                        <h3>목회학과 교수진</h3>
-                        <strong>교수</strong>
-                        <ul>
-                            <li>설교학 / 목회학 / 예배학</li>
-                            <li>교회 현장 중심의 실천신학 교육</li>
-                            <li>목회 상담, 리더십, 현장실습 지도</li>
-                            <li>교단과 지역교회를 섬길 목회자 양성</li>
-                        </ul>
-                    </div>
-                     </article>
-                <article class="faculty-card">
-                    <img src="assets/images/dean1.png" alt="목회학과 교수진" class="faculty-photo">
-                    <div class="faculty-body">
-                        <h3>목회학과 교수진</h3>
-                        <strong>교수</strong>
-                        <ul>
-                            <li>설교학 / 목회학 / 예배학</li>
-                            <li>교회 현장 중심의 실천신학 교육</li>
-                            <li>목회 상담, 리더십, 현장실습 지도</li>
-                            <li>교단과 지역교회를 섬길 목회자 양성</li>
-                        </ul>
-                    </div>
-                </article>
-                <article class="faculty-card">
-                    <img src="assets/images/site-logo1.png" alt="선교학과 교수진" class="faculty-photo">
-                    <div class="faculty-body">
-                        <h3>선교학과 교수진</h3>
-                        <strong>교수</strong>
-                        <ul>
-                            <li>선교신학 / 문화인류학 / 선교전략</li>
-                            <li>세계 선교와 지역사회 사역 연계 교육</li>
-                            <li>복음 전파와 선교 리더십 훈련</li>
-                            <li>국내외 선교 현장 연구 및 프로젝트 지도</li>
-                        </ul>
-                    </div>
-                </article>
-            </div>
-        </div>
-    </main>
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
   <div id="site-footer"></div>
   <script src="../../assets/js/main.js" defer></script>
 </body>
