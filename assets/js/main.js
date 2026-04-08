@@ -4,7 +4,7 @@ const NAV = [
     path: "/youngji_about-us/",
     children: [
       { label: "Mission and Vision", path: "/youngji_about-us/vision-and-mission/" },
-      { label: "Board of Sponsors", path: "/youngji_about-us/Board of Sponsors/" },
+      { label: "Board of Sponsors", path: "/youngji_about-us/board-of-sponsors/" },
       { label: "Founder’s message", path: "/youngji_about-us/principals-message/" },
       { label: "President Message", path: "/youngji_about-us/school-counseling/" },
       { label: "Faculty and staff", path: "/youngji_about-us/faculty-and-staff/" },
