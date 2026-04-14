@@ -52,6 +52,7 @@ const NAV = [
       { label: "Contact Info", path: "/community/campus-life/" },
       { label: "Branch school of GTCC", path: "/community/extension-class-center/" },
       { label: "Contact Info & Search for student", path: "/community/search-for-student/" },
+      { label: "e-Apostille Verification", path: "/community/e-apostille/" },
     ],
   },
 ];

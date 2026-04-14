@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>e-Apostille Verification | Community | GTCC</title>
+  <meta name="description" content="e-Apostille verification preview for GTCC certificates." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+Pro:wght@400;600;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body data-depth="2" data-current-path="/community/e-apostille/" class="bg-[#F8F7F3] font-['Inter',_sans-serif] text-[#1F2933] antialiased">
+  <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:rounded-full focus:bg-white focus:px-4 focus:py-2 focus:text-[#1A1F2B]">Skip to main content</a>
+  <div id="site-header"></div>
+  <main id="main-content" class="mx-auto max-w-6xl px-4 py-12">
+    <nav id="breadcrumbs" class="mb-8" aria-label="Breadcrumb"></nav>
+    <section class="rounded-3xl border border-[#A51C30]/15 bg-white px-8 py-12 shadow-sm">
+      <p class="text-xs font-semibold uppercase tracking-[0.3em] text-[#A51C30]">Community</p>
+      <h1 class="mt-3 font-['Source_Serif_Pro',_serif] text-4xl font-semibold tracking-tight text-[#1A1F2B] sm:text-5xl">e-Apostille Verification</h1>
+      <p class="mt-4 max-w-2xl text-lg leading-relaxed text-slate-600">On-screen verification of GTCC documents.</p>
+    </section>
+
+    <div class="mt-10 grid gap-10 lg:grid-cols-[280px,1fr]">
+      <aside id="sidebar" class="hidden lg:block lg:sticky lg:top-32">
+        <div class="rounded-2xl border border-slate-200/80 bg-white p-6 shadow-sm">
+          <h2 class="text-xs font-semibold uppercase tracking-[0.25em] text-slate-500">In this section</h2>
+          <nav aria-label="Section navigation" class="mt-4">
+            <ul id="sidebar-nav" class="space-y-2"></ul>
+          </nav>
+        </div>
+      </aside>
+
+      <section class="space-y-10">
+        <article class="rounded-3xl border border-slate-200/60 bg-white p-8 shadow-sm">
+          <div class="space-y-6 text-base leading-relaxed text-slate-700">
+            <p>This page displays the e-Apostille verification details and a PDF preview of the certified document.</p>
+          </div>
+        </article>
+
+        <section class="rounded-3xl border border-slate-200/60 bg-white p-8 shadow-sm" aria-labelledby="verification">
+          <div class="grid gap-6 lg:grid-cols-[360px,1fr] items-start">
+            <div class="rounded-2xl border border-slate-200/80 bg-white p-6 shadow-sm">
+              <p class="text-xs font-semibold uppercase tracking-[0.25em] text-slate-500">Verification</p>
+              <h3 id="verification" class="mt-2 font-['Source_Serif_Pro',_serif] text-xl font-semibold text-[#1A1F2B]">e-Apostille Verification</h3>
+
+              <dl class="mt-6 grid gap-y-3 text-sm text-slate-700">
+                <div class="flex justify-between">
+                  <dt class="text-slate-500">Serial Number</dt>
+                  <dd class="font-medium">26e-0013580</dd>
+                </div>
+                <div class="flex justify-between">
+                  <dt class="text-slate-500">Signed By</dt>
+                  <dd class="font-medium">Rogelio T. Galera, Jr.</dd>
+                </div>
+                <div class="flex justify-between">
+                  <dt class="text-slate-500">Capacity</dt>
+                  <dd class="font-medium">Regional Director</dd>
+                </div>
+                <div class="flex justify-between">
+                  <dt class="text-slate-500">Seal Of</dt>
+                  <dd class="font-medium">Commission on Higher Education</dd>
+                </div>
+              </dl>
+
+              <p class="mt-6 rounded border border-slate-100/80 bg-slate-50/60 p-3 text-xs text-slate-600">Notice: This preview is for on-screen verification only. Printing or saving is discouraged and may be restricted by policy.</p>
+
+              <div class="mt-6 flex gap-3">
+                <a id="refresh-link" class="inline-flex items-center rounded-md bg-[#1A1F2B] px-4 py-2 text-sm font-semibold text-white hover:bg-[#111315]" href="#">Refresh</a>
+                <a href="/community/" class="inline-flex items-center rounded-md border border-slate-200 px-4 py-2 text-sm font-semibold text-slate-700 hover:bg-slate-100">Back</a>
+              </div>
+            </div>
+
+            <div>
+              <div class="flex items-start justify-between">
+                <div>
+                  <p class="text-xs font-semibold uppercase tracking-[0.25em] text-slate-500">e-Apostille Preview</p>
+                  <h4 class="mt-2 text-lg font-semibold text-[#1A1F2B]">For visual verification only</h4>
+                </div>
+                <div class="ml-4">
+                  <span class="inline-flex items-center rounded-md border border-slate-200/60 bg-white px-3 py-1 text-xs font-medium text-slate-600">View only</span>
+                </div>
+              </div>
+
+              <div class="mt-4 rounded-lg border border-slate-200 overflow-hidden">
+                <!-- Use a public PDF that allows embedding to ensure preview shows in iframe -->
+                <iframe src="https://mozilla.github.io/pdf.js/web/compressed.tracemonkey-pldi-09.pdf" title="e-Apostille Preview" class="w-full" style="height:640px;border:0"></iframe>
+              </div>
+            </div>
+          </div>
+        </section>
+
+      </section>
+    </div>
+
+    <section id="global-cta" class="mt-16"></section>
+  </main>
+  <div id="site-footer"></div>
+  <script src="../../assets/js/main.js" defer></script>
+</body>
+</html>
