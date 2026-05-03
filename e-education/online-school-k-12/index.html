@@ -40,19 +40,19 @@
         padding: 0;
         margin: 0;
         gap: 15px;
-        /* 핵심: 같은 줄의 모든 항목 높이를 가장 긴 박스에 맞춤 */
-        align-items: stretch; 
+        /* 핵심 수정: 줄바꿈 시 높이 충돌을 방지하기 위해 상단 정렬로 변경 */
+        align-items: flex-start; 
     }
 
     .subject-list li {
         flex: 0 1 calc(33.333% - 10px);
         box-sizing: border-box;
-        /* li 내부의 a 태그도 높이를 100% 채우도록 설정 */
-        display: flex; 
+        /* 내부 a 태그가 li의 높이를 채우지 못하더라도 li 자체는 상단 정렬 */
+        display: block; 
     }
 
     .subject-link {
-        /* 내부 정렬을 flex로 변경하여 상하좌우 중앙 정렬 */
+        /* 내부 정렬을 flex로 변경하여 상하좌우 중앙 정렬 (이전과 동일) */
         display: flex;
         align-items: center; 
         justify-content: center;
@@ -68,10 +68,13 @@
         transition: all 0.2s ease;
         text-align: center;
 
-        /* 글자 처리 핵심 */
-        word-break: keep-all; /* 단어 단위 줄바꿈 (한글/영문 깔끔하게) */
+        /* 글자 처리 핵심 (이전과 동일) */
+        word-break: keep-all; /* 단어 단위 줄바꿈 */
         line-height: 1.4;     /* 줄 간격 확보 */
-        min-height: 65px;    /* 박스의 최소 높이를 지정해 균일감 부여 */
+        
+        /* 박스의 최소 높이를 넉넉하게 지정하여 균일감을 줍니다. */
+        /* 가장 긴 박스(두 줄)를 기준으로 넉넉히 잡습니다. */
+        min-height: 80px;    
     }
 
     .subject-link:hover {
