@@ -31,34 +31,41 @@
       </aside>
 
 <style>
-    /* ... 기존 컨테이너 및 헤더 스타일 동일 ... */
+    .subject-container {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 20px;
+        font-family: 'Malgun Gothic', sans-serif;
+    }
 
+    .subject-header {
+        border-bottom: 2px solid #333;
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+    }
+
+    /* Flex 대신 Grid를 사용하여 칸을 강제로 나눕니다 */
     .subject-list {
-        display: flex;
-        flex-wrap: wrap;
+        display: grid;
+        /* 기본 3열 구성, 간격 15px */
+        grid-template-columns: repeat(3, 1fr); 
+        gap: 15px;
         list-style: none;
         padding: 0;
         margin: 0;
-        gap: 15px;
-        /* 핵심 수정: 줄바꿈 시 높이 충돌을 방지하기 위해 상단 정렬로 변경 */
-        align-items: flex-start; 
     }
 
     .subject-list li {
-        flex: 0 1 calc(33.333% - 10px);
-        box-sizing: border-box;
-        /* 내부 a 태그가 li의 높이를 채우지 못하더라도 li 자체는 상단 정렬 */
-        display: block; 
+        width: 100%;
+        display: flex; /* 내부 a 태그 높이를 맞추기 위함 */
     }
 
     .subject-link {
-        /* 내부 정렬을 flex로 변경하여 상하좌우 중앙 정렬 (이전과 동일) */
         display: flex;
-        align-items: center; 
+        align-items: center;
         justify-content: center;
         width: 100%;
-        
-        padding: 15px 10px; /* 상하 여유를 좀 더 줌 */
+        padding: 15px 10px;
         background-color: #f8f9fa;
         border: 1px solid #e9ecef;
         border-left: 4px solid #007bff;
@@ -67,14 +74,12 @@
         font-weight: 500;
         transition: all 0.2s ease;
         text-align: center;
-
-        /* 글자 처리 핵심 (이전과 동일) */
-        word-break: keep-all; /* 단어 단위 줄바꿈 */
-        line-height: 1.4;     /* 줄 간격 확보 */
         
-        /* 박스의 최소 높이를 넉넉하게 지정하여 균일감을 줍니다. */
-        /* 가장 긴 박스(두 줄)를 기준으로 넉넉히 잡습니다. */
-        min-height: 80px;    
+        /* 글자 줄바꿈 설정 */
+        word-break: keep-all; 
+        line-height: 1.4;
+        /* 최소 높이를 지정하여 글자가 적어도 박스 크기를 유지 */
+        min-height: 70px; 
     }
 
     .subject-link:hover {
@@ -85,13 +90,21 @@
         box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     }
 
-    @media (max-width: 768px) {
-        .subject-list li {
-            flex: 0 1 100%;
+    /* 태블릿: 2열 구성 */
+    @media (max-width: 900px) {
+        .subject-list {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    /* 모바일: 1열 구성 */
+    @media (max-width: 600px) {
+        .subject-list {
+            grid-template-columns: 1fr;
         }
     }
 </style>
-      
+
 <div class="subject-container">
     <article>
         <div class="subject-header">
@@ -105,7 +118,8 @@
             <li><a href="http://yfloavmotj9hz8g2ivvxyqpfin2ciap.quickconnect.to/sharing/M7z4bH6jr" target="_blank" class="subject-link">Music TESOL.3</a></li>
             <li><a href="http://yfloavmotj9hz8g2ivvxyqpfin2ciap.quickconnect.to/sharing/589sC8V4M" target="_blank" class="subject-link">Coffee TESOL.1</a></li>
             <li><a href="http://yfloavmotj9hz8g2ivvxyqpfin2ciap.quickconnect.to/sharing/XmUfF2Yqo" target="_blank" class="subject-link">Coffee TESOL.2</a></li>
-            <li><a href="http://yfloavmotj9hz8g2ivvxyqpfin2ciap.quickconnect.to/sharing/BHtK6Dop1" target="_blank" class="subject-link">Coffee TESOL.3</li>
+            <li><a href="http://yfloavmotj9hz8g2ivvxyqpfin2ciap.quickconnect.to/sharing/BHtK6Dop1" target="_blank" class="subject-link">Coffee TESOL.3</a></li>
+            <li><a href="http://yfloavmotj9hz8g2ivvxyqpfin2ciap.quickconnect.to/sharing/ehKoWXsPX" target="_blank" class="subject-link">International Private Investigator</a></li>
             <li><a href="http://yfloavmotj9hz8g2ivvxyqpfin2ciap.quickconnect.to/sharing/6G4lf64OP" target="_blank" class="subject-link">Prompt Engineering.1</a></li>
             <li><a href="http://yfloavmotj9hz8g2ivvxyqpfin2ciap.quickconnect.to/sharing/f8gmpVvDh" target="_blank" class="subject-link">Prompt Engineering.2</a></li>
             <li><a href="http://yfloavmotj9hz8g2ivvxyqpfin2ciap.quickconnect.to/sharing/4jbLH62Gf" target="_blank" class="subject-link">Prompt Engineering.3</a></li>
