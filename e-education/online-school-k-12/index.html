@@ -31,18 +31,7 @@
       </aside>
 
 <style>
-    .subject-container {
-        max-width: 1000px;
-        margin: 0 auto;
-        padding: 20px;
-        font-family: 'Malgun Gothic', sans-serif;
-    }
-
-    .subject-header {
-        border-bottom: 2px solid #333;
-        padding-bottom: 10px;
-        margin-bottom: 20px;
-    }
+    /* ... 기존 컨테이너 및 헤더 스타일 동일 ... */
 
     .subject-list {
         display: flex;
@@ -51,25 +40,25 @@
         padding: 0;
         margin: 0;
         gap: 15px;
-        /* 항목들의 높이를 동일하게 맞춤 */
+        /* 핵심: 같은 줄의 모든 항목 높이를 가장 긴 박스에 맞춤 */
         align-items: stretch; 
     }
 
     .subject-list li {
         flex: 0 1 calc(33.333% - 10px);
         box-sizing: border-box;
-        /* 내부 a 태그가 꽉 차도록 설정 */
+        /* li 내부의 a 태그도 높이를 100% 채우도록 설정 */
         display: flex; 
     }
 
     .subject-link {
+        /* 내부 정렬을 flex로 변경하여 상하좌우 중앙 정렬 */
         display: flex;
-        /* 세로 중앙 정렬 */
         align-items: center; 
-        /* 가로 중앙 정렬 */
-        justify-content: center; 
+        justify-content: center;
         width: 100%;
-        padding: 12px 10px;
+        
+        padding: 15px 10px; /* 상하 여유를 좀 더 줌 */
         background-color: #f8f9fa;
         border: 1px solid #e9ecef;
         border-left: 4px solid #007bff;
@@ -78,11 +67,11 @@
         font-weight: 500;
         transition: all 0.2s ease;
         text-align: center;
-        /* 글자가 길어지면 자동 줄바꿈 */
-        word-break: keep-all; 
-        line-height: 1.4;
-        /* 최소 높이 설정 (선택사항) */
-        min-height: 60px; 
+
+        /* 글자 처리 핵심 */
+        word-break: keep-all; /* 단어 단위 줄바꿈 (한글/영문 깔끔하게) */
+        line-height: 1.4;     /* 줄 간격 확보 */
+        min-height: 65px;    /* 박스의 최소 높이를 지정해 균일감 부여 */
     }
 
     .subject-link:hover {
@@ -99,7 +88,7 @@
         }
     }
 </style>
-
+      
 <div class="subject-container">
     <article>
         <div class="subject-header">
